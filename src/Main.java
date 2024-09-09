@@ -42,26 +42,77 @@ public class Main {
         System.out.println("l=" + l); // Вывод: l=-9223372036854775808
 
 // Числа с плавающей точкой
-
+        System.out.println("Числа с плавающей точкой");
 // float
+        System.out.println("float");
         float f = 3.14f;
-        System.out.println(f); // Вывод: 3.14
+        System.out.println("f=" + f); // Вывод: 3.14
         f = -3.14f;
-        System.out.println(f); // Вывод: -3.14
+        System.out.println("f=" + f); // Вывод: -3.14
 
 // double
+        System.out.println("double");
         double d = 3.14159265358979;
-        System.out.println(d); // Вывод: 3.14159265358979
+        System.out.println("d=" + d); // Вывод: 3.14159265358979
         d = -3.14159265358979;
-        System.out.println(d); // Вывод: -3.14159265358979
-
+        System.out.println("d=" + d); // Вывод: -3.14159265358979
 
 
 // char - символьный тип
+        System.out.println("символьный тип");
         System.out.println("char");
         char c = 'A';
-        System.out.println(c); // Вывод: A
+        System.out.println("char c" + c); // Вывод: A
         c = '\u0041'; // Шестнадцатеричный код символа 'A'
-        System.out.println(c); // Вывод: A
+        System.out.println("char c" + c); // Вывод: A
+
+// Логический тип
+        System.out.println("Логический тип");
+// boolean
+        System.out.println("boolean");
+        boolean bool = true;
+        System.out.println(bool); // Вывод: true
+        bool = false;
+        System.out.println(bool); // Вывод: false
+
+//Ссылочные типы
+        System.out.println("Ссылочные типы");
+// String
+        System.out.println("String - строка");
+        String str = "Hello, World!";
+        System.out.println(str); // Вывод: Hello, World!
+        str = new String("Hello, World!");
+        System.out.println(str); // Вывод: Hello, World!
+
+// Массив
+        System.out.println("Массив");
+        int[] arr = new int[5];
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 3;
+        arr[3] = 4;
+        arr[4] = 5;
+        for (int num : arr) {
+            System.out.print(num + " "); // Вывод: 1 2 3 4 5
+        }
+
+        System.out.println(); // Просто пустая строка
+// Класс
+        System.out.println("Класс");
+        class Person {
+            String name;
+            int age;
+        }
+        Person person = new Person();
+        person.name = "John Doe";
+        person.age = 30;
+        System.out.println(person.name); // Вывод: John Doe
+        System.out.println(person.age); // Вывод: 30
+
+// Интерфейс
+        interface Shape {
+            double getArea();
+        }
+
     }
 }
